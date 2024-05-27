@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <title>Api</title>
 </head>
+
 <body>
     <main>
         <div>
@@ -59,13 +61,66 @@
                 </div>
             </div>
         </div>
-        
+
         <div id="productContainer">
             <div class="d-flex flex-wrap justify-content-evenly mb-3">
             </div>
         </div>
+
+        <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmDeleteModalLabel">Producto Eliminado</h5>
+                    </div>
+                    <div class="modal-body">
+                        El producto ha sido eliminado exitosamente.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" onclick="reloadButton()">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="confirmEditModal" tabindex="-1" aria-labelledby="confirmEditModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmEditModalLabel">Producto Editado</h5>
+                    </div>
+                    <div class="modal-body">
+                        El producto ha sido editado exitosamente.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" onclick="reloadButton()">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="confirmCreateModal" tabindex="-1" aria-labelledby="confirmCreateModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmCreateModalLabel">Producto Agregado</h5>
+                    </div>
+                    <div class="modal-body">
+                        El producto ha sido agregado exitosamente.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" onclick="reloadButton()">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
+<script src="./assets/js/jquery-3.7.1.min.js"></script>
 <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="./assets/js/index.js"></script>
+
 </html>
